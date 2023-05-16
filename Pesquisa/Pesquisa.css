@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte: 'Raleway', sans-serif;
+    --color-1: #e4c8c5;
+    --color-2: #AA8B56;
+    --color-3: #4E6C50;
+    --color-4: #395144;
+    --color-5: #1c1c1b;
+}
+
+.pesquisa {
+    margin: 14px 0;
+}
+
+.pesquisa input {
+    font-family: var(--fonte);
+    background-color: transparent;
+    color: var(--color-1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}

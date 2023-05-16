@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte: 'Raleway', sans-serif;
+    --color-1: #e4c8c5;
+    --color-2: #AA8B56;
+    --color-3: #4E6C50;
+    --color-4: #395144;
+    --color-5: #1c1c1b;
+}
+
+.cabecalho {
+    background-image: url(../imagens/card1.jpg);
+    font-family: var(--fonte);
+    font-weight: 500;
+    color: var(--color-1);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.cabecalho_logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logo_text {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.logo_text::first-letter {
+    font-size: 25px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.botao_loja {
+    font-size: 20px;
+}
+
+.botao_lojas {
+    gap: 8px;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.botao_pesquisa {
+    font-size: 20px;
+}
+
+.seta {
+    font-size: 14px;
+    color: var(--color-1);
+    align-items: center;
+}
+
+.titulo_modal {
+    font-size: 16px;
+    font-family: var(--fonte);
+    margin: 10px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_user {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_box {
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../imagens/card1.jpg);
+    padding: 10px;
+    color: var(--color-1);
+    border-radius: 5px;
+}
+
+.x {
+    color: var(--color-1);
+    border-radius: 100%;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    font-family: var(--fonte);
+    gap: 20px;
+    justify-content: center;
+}
+
+.input_label {
+    
+    font-family: var(--fonte);
+    background-color: transparent;
+    color: var(--color-1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+    width: 70%;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.opcoes_extra-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.show {
+    max-height: 100px;
+}
+
+.opcoes_extra {
+    width: 85%;
+    border-radius: 10px;
+    font-family: var(--fonte);
+    color: var(--color-1);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 10px 10px 5px;
+    display: flex;
+    gap: 7px;
+    margin-left: 2em;
+    cursor: pointer;
+    background-color: var(--background);
+    border: none;
+}
